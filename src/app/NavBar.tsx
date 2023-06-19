@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { AppstoreOutlined, HomeFilled } from '@ant-design/icons';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
+import Search from '@/components/search';
 
 const items: MenuProps['items'] = [
   {
@@ -12,13 +13,18 @@ const items: MenuProps['items'] = [
     icon: <HomeFilled />,
   },
   {
-    label: 'Hello',
-    key: '/hello',
+    label: 'Static',
+    key: '/static',
     icon: <AppstoreOutlined />,
   },
   {
-    label: 'Static',
-    key: '/static',
+    label: 'Dynamic',
+    key: '/dynamic',
+    icon: <AppstoreOutlined />,
+  },
+  {
+    label: 'ISR',
+    key: '/isr',
     icon: <AppstoreOutlined />,
   },
 ];
@@ -37,6 +43,7 @@ function NavBar() {
     <Layout.Header className='flex items-center'>
       <Link href={'/'} className="text-white text-xl mr-8">Lions</Link>
       <Menu className='flex-1' onClick={onClick} theme="dark" selectedKeys={[current]} mode="horizontal" items={items} />
+      <Search />
     </Layout.Header>
   )
 }
