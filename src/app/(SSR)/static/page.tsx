@@ -24,7 +24,7 @@ async function Page() {
         }
         <Image className='rounded-xl shadow max-w-full' src={image.urls.raw} width={width} height={height} alt={image.description || 'image'} />
         <div>
-          by <Link className='no-underline' href={`users/${image.user.username}`}>{image.user.username}</Link>
+          by <Link className='no-underline' href={`/users/${image.user.username}`}>{image.user.username}</Link>
         </div>
       </div>
     </>
