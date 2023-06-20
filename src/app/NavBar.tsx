@@ -1,7 +1,7 @@
 'use client'
 import { Layout, Menu, MenuProps } from 'antd';
 import React, { useState } from 'react'
-import { AppstoreOutlined, HomeFilled } from '@ant-design/icons';
+import { AppstoreOutlined, HomeFilled, SearchOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import Search from '@/components/search';
@@ -26,6 +26,11 @@ const items: MenuProps['items'] = [
     label: 'ISR',
     key: '/isr',
     icon: <AppstoreOutlined />,
+  },
+  {
+    label: 'Search',
+    key: '/search',
+    icon: <SearchOutlined />,
   },
 ];
 

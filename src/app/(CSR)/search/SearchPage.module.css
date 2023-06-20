@@ -1,0 +1,23 @@
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.image {
+  flex: 1;
+  margin: .25rem;
+  border-radius: 4px;
+
+  object-fit: cover;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+}
